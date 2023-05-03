@@ -12,7 +12,7 @@ Louis Brulé Naudet (<contact@louisbrulenaudet.com>) as soon as possible.
 If you have legitimate reasons to believe that the security of the website, 
 database, or user resources is threatened, please provide information on how the 
 vulnerability was created and, if possible, formulate a hypothesis based on your observations 
-as to the recurrence of the vulnerability or its qualitative importance
+as to the recurrence of the vulnerability or its qualitative importance.
 
 ## Supported Versions
 
