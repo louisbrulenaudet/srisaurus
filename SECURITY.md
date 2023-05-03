@@ -22,3 +22,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.x.x   | :white_check_mark: |
+
+## Responsible Disclosure
+
+In some cases, we may apply a responsible disclosure process to reported or otherwise discovered vulnerabilities. We will usually do that for a critical vulnerability, and only if we have a good reason to believe information about it is not yet public.
