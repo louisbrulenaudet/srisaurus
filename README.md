@@ -80,10 +80,6 @@ sri.get("./public/css", "sha384");
 ```
 Then, we can observe the creation of a JSON element, containing each filepath contained in the directory and its subdirectories, as well as the assignment of a unique hash preceded by the mention `"sha256-"`, `"sha384-"` or `"sha512-"` directly exploitable in your routes configuration file.
 
-## 🚀 About Me
-
-My name is [Louis](https://louisbrulenaudet.com), student researcher in corporate taxation at Dauphine-PSL University and full-stack developer (NodeJS, MongoDB, Express, Front-End), specializing in French cryptocurrency law issues, SEO optimization and user experience improvement. 
-
 ## License
 
 Copyright (c) 2022 Louis Brulé Naudet <contact@louisbrulenaudet.com>.
