@@ -5,9 +5,10 @@
 Ultralight, non-dependent and minimalist open-source package to recursively generate **sha-256**, **sha-384** or **sha-512** subresource integrity hashes to authenticate **.js** and **.css** files.
 
 ```js
-const sri = require("open-sri");
+import { Srisaurus } from "https://deno.land/x/srisaurus/mod.ts"
 
-sri.get("./public/css", "sha384");
+let hash = new Srisaurus("SHA-256")
+await hash.get("./public/css");
 ```
 
 [Subresource Integrity](https://developer.mozilla.org/fr/docs/Web/Security/Subresource_Integrity) or SRI is a [W3C recommendation](https://www.w3.org/TR/SRI/) to provide a method to protect website delivery from CDN-served malicious code.
@@ -24,7 +25,7 @@ This package aims at automating the process of generating cryptographic hashes i
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/louisbrulenaudet/open-sri/issues)
-![npm version](https://img.shields.io/npm/v/open-sri)
+[![deno land](http://img.shields.io/badge/available%20on-deno.land/x-blue.svg?logo=deno)](https://deno.land/x/cli_badges)  
 
 ## Features
 
@@ -33,41 +34,26 @@ This package aims at automating the process of generating cryptographic hashes i
 - High availability for synchronization with CDN systems
 - Simple deployment with one-line integration
 
-## Tech Stack
-
-**Server:** Node, Express
-
 ## Installation
 
-This is a [Node.js](https://nodejs.org/en/) module available through the [npm registry](https://www.npmjs.com/).
+This is a [Deno third party module](https://deno.land/x) module available through the [Deno.land registry]https://deno.land/x).
 
-Before installing, [download and install Node.js](https://nodejs.org/en/download/). Node.js 0.10 or higher is required.
-
-If this is a brand new project, make sure to create a `package.json` first with the [`npm init` command](https://docs.npmjs.com/creating-a-package-json-file). Then:
-
-```bash
-  npm i open-sri
-```
+Before installing, download and install [Deno.land](https://deno.com/manual@v1.33.2/getting_started/installation). Deno works on macOS, Linux, and Windows as a single binary executable. It has no external dependencies.
 
 ## Importing
 
 ```js
-// Using Node.js 'require()'
-const sri = require('open-sri');
+// Using es6 syntax.
+import { Srisaurus } from "https://deno.land/x/srisaurus/mod.ts"
 ```
-
-## Documentation
-
-The `get` function take two arguments, the `directory` (`string`) containing static files we want to obtain hashes from, and the required `algorithm` for the calculation `sha256`, `sha384` or `sha512` (`string`). 
-
-Return `JSON` object.
 
 ## Usage/Examples
 
-```javascript
-const sri = require("open-sri");
+```js
+import { Srisaurus } from "https://deno.land/x/srisaurus/mod.ts"
 
-sri.get("./public/css", "sha384");
+let hash = new Srisaurus("SHA-256")
+await hash.get("./public/css");
 ```
 
 ```javascript
