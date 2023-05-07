@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"strict": true,
+    "lib": ["es6", "dom", "es2017"],
+	},
+	"imports": {
+		"crypto": "https://deno.land/std@0.186.0/crypto/mod.ts",
+		"path": "https://deno.land/std@0.186.0/path/mod.ts"
+	}
+}
